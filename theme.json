@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-qc",
+    "name": "qc",
+    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
+    "url": "https://github.com/cdscawd/nodebb-theme-qc",
+    "screenshot": "screenshot.png"
+}
