@@ -12,18 +12,23 @@
 
 		<div class="clearfix">
 			<!-- IF privileges.topics:create -->
-			<button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+			<button component="category/post" id="new_topic" class="btn btn-primary"><i class="fa fa-fw fa-pencil-square-o"></i>发帖</button>
 			<!-- ELSE -->
 				<!-- IF !loggedIn -->
-				<a component="category/post/guest" href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
+				<a component="category/post/guest" href="{config.relative_path}/login" class="btn btn-primary">登陆发帖</a>
 				<!-- ENDIF !loggedIn -->
 			<!-- ENDIF privileges.topics:create -->
 
+			<!-- IF config.qooco.category.controls -->
 			<span class="pull-right" component="category/controls">
 				<!-- IMPORT partials/category/watch.tpl -->
 				<!-- IMPORT partials/category/sort.tpl -->
 				<!-- IMPORT partials/category/tools.tpl -->
 			</span>
+			<!-- ENDIF config.qooco.category.controls -->
+			
+
+
 		</div>
 
 		<hr class="hidden-xs" />

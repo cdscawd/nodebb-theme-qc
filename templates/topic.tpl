@@ -36,14 +36,16 @@
 			<!-- BEGIN posts -->
 				<li component="post" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
 					<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
-
 					<meta itemprop="datePublished" content="{posts.timestampISO}">
 					<meta itemprop="dateModified" content="{posts.editedISO}">
-
 					<!-- IMPORT partials/topic/post.tpl -->
+						
+					<!-- BEGIN qooco.topic.postbartop -->
 					<!-- IF !posts.index -->
 					<div class="post-bar-placeholder"></div>
 					<!-- ENDIF !posts.index -->
+					<!-- END qooco.topic.postbartop -->
+
 				</li>
 			<!-- END posts -->
 		</ul>

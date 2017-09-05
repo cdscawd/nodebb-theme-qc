@@ -1,8 +1,10 @@
 <div component="topic/reply/container" class="btn-group action-bar <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">
 	<button class="btn btn-primary" component="topic/reply">[[topic:reply]]</button>
+	<!-- BEGIN qooco.replybutton.caret -->
 	<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
 		<span class="caret"></span>
 	</button>
+	<!-- END qooco.replybutton.caret -->
 	<ul class="dropdown-menu pull-right" role="menu">
 		<li><a href="#" component="topic/reply-as-topic">[[topic:reply-as-topic]]</a></li>
 	</ul>

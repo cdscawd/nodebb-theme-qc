@@ -7,7 +7,7 @@
 				</button>
 				
 				<!-- IF config.qooco.menu.navbarBrand -->
-				<a href="{relative_path}/">
+				<a href="javascript: history.back();">
 					<h1 class="navbar-brand forum-title navbar-back"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
 				</a>
 				<span class="close-bbs">关闭</span>
@@ -64,17 +64,18 @@
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"<!-- IF !user.picture --> style="display: none;"<!-- ENDIF !user.picture --> />
 							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};<!-- IF user.picture --> display: none;"<!-- ENDIF user.picture -->">{user.icon:text}</div>
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+							
 						</a>
 						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
-							<li>
-								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+							<li style="position: relative;padding-top: 10px;">
+								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}" style="position: absolute;width: 100%;top: -30px;text-align: center;">
 									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 
 								<a href="{config.relative_path}/user/{user.userslug}/posts">
 									<i class="fa fa-fw fa-pencil-square-o"></i> <span component="header/username">我的帖子</span>
 								</a>
-								<a href="{config.relative_pathr/{user.userslug}/posts">
+								<a href="{config.relative_path}/user/{user.userslug}/bookmarks">
 									<i class="fa fa-fw fa-heart-o"></i> <span component="header/bookmarks">我的收藏</span>
 								</a>
 
@@ -130,11 +131,9 @@
 							<!-- ENDIF isAdmin -->
 							<!-- ENDIF showModMenu -->
 							<li role="presentation" class="divider"></li>
-							<!-- BEGIN qoocoUserShowDOM -->
 							<li component="user/logout">
 								<a href="#"><i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span></a>
 							</li>
-							<!-- END qoocoUserShowDOM -->
 						</ul>
 					</li>
 
