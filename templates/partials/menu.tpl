@@ -10,7 +10,9 @@
 				<a href="javascript: history.back();">
 					<h1 class="navbar-brand forum-title navbar-back"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
 				</a>
+				
 				<span class="close-bbs">关闭</span>
+
 				<!-- ENDIF config.qooco.menu.navbarBrand -->
 
 				<div component="navbar/title" class="visible-xs hidden">
@@ -73,11 +75,18 @@
 								</a>
 
 								<a href="{config.relative_path}/user/{user.userslug}/posts">
-									<i class="fa fa-fw fa-pencil-square-o"></i> <span component="header/username">我的帖子</span>
+									<i class="fa fa-fw fa-pencil-square-o"></i> <span>我的帖子</span>
 								</a>
 								<a href="{config.relative_path}/user/{user.userslug}/bookmarks">
-									<i class="fa fa-fw fa-heart-o"></i> <span component="header/bookmarks">我的收藏</span>
+									<i class="fa fa-fw fa-heart-o"></i> <span>我的收藏</span>
 								</a>
+								<a href="/popular">
+									<i class="fa fa-fw fa-fire"></i> <span>热门帖子</span>
+								</a>
+								<a href="{relative_path}/notifications">
+									<i class="fa fa-fw fa-comments"></i> <span>通知</span>
+								</a>
+
 
 							</li>
 							<!-- BEGIN qoocoUserShowDOM -->

@@ -53,22 +53,20 @@
 			<ul class="menu-section-list" component="header/usercontrol"></ul>
 		</section>
 		<!-- ENDIF config.loggedIn -->
-		
-		<section class="menu-section" data-section="navigation">
-			<h3 class="menu-section-title">[[global:header.navigation]]</h3>
-			<ul class="menu-section-list"></ul>
-		</section>
 
 		<!-- IF config.loggedIn -->
 		<section class="menu-section" data-section="notifications">
+			<!-- BEGIN qooco.header.notifications -->
 			<h3 class="menu-section-title">
 				[[global:header.notifications]]
 				<span class="counter" component="notifications/icon" data-content="0"></span>
 			</h3>
 			<ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
-			<p class="menu-section-list"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></p>
+			<p class="menu-section-list"><a href="{relative_path}/notifications"><i component="user/status" class="fa fa-fw fa-comments"></i>&nbsp;通知</a></p>
+			<!-- END qooco.header.notifications -->
 		</section>
 
+		<!-- BEGIN qooco.header.chats -->
 		<section class="menu-section" data-section="chats">
 			<h3 class="menu-section-title">
 				[[global:header.chats]]
@@ -76,6 +74,7 @@
 			</h3>
 			<ul class="menu-section-list chat-list" component="chat/list"></ul>
 		</section>
+		<!-- END qooco.header.chats -->
 		<!-- ENDIF config.loggedIn -->
 	</nav>
 

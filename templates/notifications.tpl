@@ -15,9 +15,10 @@
 		</div>
 
 		<div class="dropdown pull-right">
-			<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="display: none;">
 				<!-- IF selectedFilter -->{selectedFilter.name}<!-- ENDIF selectedFilter --> <span class="caret"></span>
 			</button>
+
 			<ul class="dropdown-menu" role="menu">
 				<!-- BEGIN filters -->
 				<!-- IF filters.separator -->

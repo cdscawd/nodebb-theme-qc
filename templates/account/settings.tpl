@@ -106,6 +106,7 @@
 		</div>
 
 		<div class="col-xs-12 col-md-6">
+			<!-- BEGIN qooco.settings.userLang -->
 			<h4>[[global:language]]</h4>
 			<div class="well">
 				<select data-property="userLang" class="form-control">
@@ -114,6 +115,7 @@
 					<!-- END languages -->
 				</select>
 			</div>
+			<!-- END qooco.settings.userLang -->
 
 
 			<h4>[[global:pagination]]</h4>

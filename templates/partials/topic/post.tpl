@@ -33,6 +33,7 @@
 			<a component="post/parent" class="btn btn-xs btn-default hidden-xs" data-topid="{posts.toPid}" href="/post/{posts.toPid}"><i class="fa fa-reply"></i> @<!-- IF posts.parent.username -->{posts.parent.username}<!-- ELSE -->[[global:guest]]<!-- ENDIF posts.parent.username --></a>
 			<!-- ENDIF posts.toPid -->
 
+			
 			<span>
 				<!-- IF posts.user.custom_profile_info.length -->
 				&#124;
@@ -42,8 +43,9 @@
 				<!-- ENDIF posts.user.custom_profile_info.length -->
 			</span>
 		</div>
+		<!-- BEGIN qooco.post.bookmarked -->
 		<span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
-
+		<!-- END qooco.post.bookmarked -->
 	</small>
 </div>
 
@@ -61,11 +63,13 @@
 	<small class="pull-right">
 		<span class="post-tools">
 			<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
+			<!-- BEGIN qooco.post.bookmark -->
 			<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
-				<span class="bookmark-text">[[topic:bookmark]]</span>&nbsp;
+				<span class="bookmark-text">收藏</span>&nbsp;
 				<i component="post/bookmark/on" class="fa fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
 				<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
 			</a>
+			<!-- END qooco.post.bookmark -->
 			
 			<!-- BEGIN qooco.post.quote -->
 			<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
@@ -73,23 +77,23 @@
 
 		</span>
 
-		<!-- BEGIN qooco.post.votes -->
 		<!-- IF !reputation:disabled -->
 		<span class="votes">
 			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-				<i class="fa fa-chevron-up"></i>
+				<i component="post/bookmarkupvote/on" class="fa fa-thumbs-o-up <!-- IF !posts.bookmarkupvote -->hidden<!-- ENDIF !posts.bookmarkupvote -->"></i>
+				<i component="post/bookmarkupvote/off" class="fa fa-thumbs-up <!-- IF posts.bookmarkupvote -->hidden<!-- ENDIF posts.bookmarkupvote -->"></i>
 			</a>
-
 			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
 
+			<!-- BEGIN qooco.post.votes -->
 			<!-- IF !downvote:disabled -->
 			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
 				<i class="fa fa-chevron-down"></i>
 			</a>
 			<!-- ENDIF !downvote:disabled -->
+			<!-- END qooco.post.votes -->
 		</span>
 		<!-- ENDIF !reputation:disabled -->
-		<!-- END qooco.post.votes -->
 
 		<!-- IMPORT partials/topic/post-menu.tpl -->
 	</small>

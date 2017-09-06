@@ -36,25 +36,33 @@
 	</a>
 </li>
 <!-- ENDIF posts.display_move_tools -->
+<!-- BEGIN qooco.post.divider -->
 <li role="presentation" class="divider"></li>
+<!-- END qooco.post.divider -->
 <!-- ENDIF posts.display_moderator_tools -->
 
 <!-- IF !posts.deleted -->
+
+
 <!-- IF config.loggedIn -->
 <li role="presentation">
 	<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
-
-		<span class="bookmark-text">[[topic:bookmark]]</span>
-		<span component="post/bookmark-count" class="bookmarkCount" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
-
-		<i component="post/bookmark/on" class="fa fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
-		<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
+	<div class="inline menu-icon">
+		<span class="bookmark-text">
+			<i component="post/bookmark/on" class="fa fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
+			<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
+		</span>
+	</div>
+	收藏
 	</a>
 </li>
 <!-- ENDIF config.loggedIn -->
 
+
 <!-- IF postSharing.length -->
+<!-- BEGIN qooco.post.divider -->
 <li role="presentation" class="divider"></li>
+<!-- END qooco.post.divider -->
 <li role="presentation" class="dropdown-header">[[topic:share_this_post]]</li>
 <!-- ENDIF postSharing.length -->
 <!-- BEGIN postSharing -->
@@ -65,9 +73,16 @@
 
 <!-- IF config.loggedIn -->
 <!-- IF !posts.selfPost -->
+
+<!-- BEGIN qooco.post.divider -->
 <li role="presentation" class="divider"></li>
+<!-- END qooco.post.divider -->
+
 <li role="presentation">
 	<a component="post/flag" role="menuitem" tabindex="-1" href="#">
+		<div class="inline menu-icon">
+			<span class="bookmark-text"><i class="fa fa-exclamation-circle"></i></span>
+		</div>
 		[[topic:flag_title]]
 	</a>
 </li>
