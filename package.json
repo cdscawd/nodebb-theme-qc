@@ -1,0 +1,26 @@
+{
+  "name": "nodebb-theme-qc",
+  "version": "1.5.0",
+  "description": "qc theme for NodeBB",
+  "main": "theme.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdscawd/nodebb-theme-qc.git"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "themes",
+    "bootstrap",
+    "qc"
+  ],
+  "author": "cdscawd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdscawd/nodebb-theme-qc/issues"
+  },
+  "homepage": "https://github.com/cdscawd/nodebb-theme-qc#readme"
+}
