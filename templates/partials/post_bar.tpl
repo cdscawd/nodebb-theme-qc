@@ -24,11 +24,10 @@
 			<i class="fa fa-inbox"></i><span class="visible-sm-inline visible-md-inline visible-lg-inline"> [[topic:mark_unread]]</span>
 		</button>
 		<!-- ENDIF loggedIn -->
-
-		<!-- IMPORT partials/topic/watch.tpl -->
-
 		<!-- IMPORT partials/topic/sort.tpl -->
 		<!-- END qooco.postbar.markunread -->
+		<!-- IMPORT partials/topic/watch.tpl -->
+
 		<div class="pull-right">&nbsp;
 		<!-- IMPORT partials/thread_tools.tpl -->
 		</div>

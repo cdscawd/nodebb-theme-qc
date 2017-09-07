@@ -25,7 +25,9 @@
 		<!-- IF showHidden -->
 		<li><a href="{config.relative_path}/user/{userslug}/settings">[[user:settings]]</a></li>
 		<li><a href="{config.relative_path}/user/{userslug}/edit">[[user:edit]]</a></li>
+		<!-- BEGIN qooco.menu.lock -->
 		<li><a href="{config.relative_path}/user/{userslug}/info">[[user:account_info]] <i class="fa fa-lock"></i></a></li>
+		<!-- END qooco.menu.lock -->
 		<!-- ENDIF showHidden -->
 
 		<!-- IF !isSelf -->
@@ -53,15 +55,22 @@
 		<!-- IF !reputation:disabled -->
 		<li><a href="{config.relative_path}/user/{userslug}/best">[[global:best]]</a></li>
 		<!-- ENDIF !reputation:disabled -->
+		
+		<!-- BEGIN qooco.menu.groups -->
 		<li><a href="{config.relative_path}/user/{userslug}/groups">[[global:header.groups]]</a></li>
+		<!-- END qooco.menu.groups -->
 
 		<!-- IF showHidden -->
-		<li><a href="{config.relative_path}/user/{userslug}/bookmarks">[[user:bookmarks]]</a></li>
-		<li><a href="{config.relative_path}/user/{userslug}/watched">[[user:watched]]</a></li>
 		<!-- IF !reputation:disabled -->
 		<li><a href="{config.relative_path}/user/{userslug}/upvoted">[[global:upvoted]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/bookmarks">[[user:bookmarks]]</a></li>
 		<!-- IF !downvote:disabled -->
+		<li><a href="{config.relative_path}/user/{userslug}/watched">[[user:watched]]</a></li>
+
+		<!-- BEGIN qooco.menu.groups -->
 		<li><a href="{config.relative_path}/user/{userslug}/downvoted">[[global:downvoted]]</a></li>
+		<!-- END qooco.menu.groups -->
+
 		<!-- ENDIF !downvote:disabled -->
 		<!-- ENDIF !reputation:disabled -->
 		<!-- ENDIF showHidden -->

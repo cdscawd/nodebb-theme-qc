@@ -1,3 +1,4 @@
+
 <!-- IF privileges.editable -->
 <div class="btn-group thread-tools bottom-sheet">
 	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">

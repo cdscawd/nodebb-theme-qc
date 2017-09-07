@@ -82,7 +82,7 @@
 						</div>
 						<!-- END qoocoUserShowDOM -->
 						
-
+						<!-- BEGIN qooco.edit.grouptitle -->
 						<div class="control-group">
 							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
 							<div class="controls">
@@ -96,6 +96,7 @@
 								</select>
 							</div>
 						</div>
+						<!-- END qooco.edit.grouptitle -->
 
 						<div class="control-group">
 							<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
