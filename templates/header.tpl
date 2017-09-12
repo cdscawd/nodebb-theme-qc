@@ -40,7 +40,7 @@
 			<div class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
 			<!-- BEGIN qoocoUserShowDOM -->
 			<!-- ENDIF user.picture -->
-			<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
+			<!-- <i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> -->
 			<!-- ENDIF user.uid -->
 			<!-- END qoocoUserShowDOM -->
 		</section>

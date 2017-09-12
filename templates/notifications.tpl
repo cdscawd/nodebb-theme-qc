@@ -1,5 +1,5 @@
 
-<div class="notifications">
+<div class="notifications" style="height: inherit;">
 
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 

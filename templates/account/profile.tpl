@@ -19,10 +19,7 @@
 
 		<div class="account-stats">
 			<!-- IF !reputation:disabled -->
-			<div class="stat">
-				<div class="human-readable-number" title="{reputation}">{reputation}</div>
-				<span class="stat-label">[[global:reputation]]</span>
-			</div>
+			
 			<!-- ENDIF !reputation:disabled -->
 
 			<div class="stat">
@@ -34,22 +31,9 @@
 				<div class="human-readable-number" title="{profileviews}">{profileviews}</div>
 				<span class="stat-label">[[user:profile_views]]</span>
 			</div>
-
-			<div class="stat">
-				<div class="human-readable-number" title="{followerCount}">{followerCount}</div>
-				<span class="stat-label">[[user:followers]]</span>
-			</div>
-
-			<div class="stat">
-				<div class="human-readable-number"  title="{followingCount}">{followingCount}</div>
-				<span class="stat-label">[[user:following]]</span>
-			</div>
 		</div>
 
 		<div class="text-center profile-meta">
-			<span>[[user:joined]]</span>
-			<strong class="timeago" title="{joindateISO}"></strong>
-
 			<span>[[user:lastonline]]</span>
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
 

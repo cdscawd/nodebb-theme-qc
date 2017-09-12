@@ -40,11 +40,9 @@
 					<meta itemprop="dateModified" content="{posts.editedISO}">
 					<!-- IMPORT partials/topic/post.tpl -->
 						
-					<!-- BEGIN qooco.topic.postbartop -->
 					<!-- IF !posts.index -->
 					<div class="post-bar-placeholder"></div>
 					<!-- ENDIF !posts.index -->
-					<!-- END qooco.topic.postbartop -->
 
 				</li>
 			<!-- END posts -->
@@ -57,7 +55,7 @@
 		<div class="post-bar">
 			<!-- IMPORT partials/post_bar.tpl -->
 		</div>
-
+		
 		<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->

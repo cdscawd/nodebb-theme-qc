@@ -10,21 +10,10 @@
 		<!-- BEGIN qoocoUserShowDOM -->
 		<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
 		<!-- END qoocoUserShowDOM -->
-		<!-- IF loggedIn -->
-		<!-- IF !isSelf -->
-		<button class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
-			<span>
-				<span class="s1"></span>
-				<span class="s2"></span>
-				<span class="s3"></span>
-			</span>
-		</button>
-		<!-- ENDIF !isSelf -->
-		<!-- ENDIF loggedIn -->
+		
 	</div>
 
 	<div class="container">
-		<!-- IMPORT partials/account/menu.tpl -->
 
 		<!-- BEGIN qoocoUserShowDOM -->
 		<!-- IF showHidden -->

@@ -1,6 +1,6 @@
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" id="mobile-menu">
-					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o" data-content="0"></span>
+				<button type="button" class="navbar-toggle" id="mobile-menu" data-show="0">
+					<span component="notifications/icon" class="notification-icon notificationtag fa fa-fw fa-bell-o" data-content="0"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -8,7 +8,7 @@
 				
 				<!-- IF config.qooco.menu.navbarBrand -->
 				<a href="javascript: history.back();">
-					<h1 class="navbar-brand forum-title navbar-back"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
+					<h1 class="navbar-brand forum-title navbar-back" style="display: none;"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
 				</a>
 				
 				<span class="close-bbs">关闭</span>
@@ -45,7 +45,7 @@
 
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
+						<a class="dropdown-toggle userName" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
 							<i component="chat/icon" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
@@ -67,18 +67,22 @@
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"<!-- IF !user.picture --> style="display: none;"<!-- ENDIF !user.picture --> />
 							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};<!-- IF user.picture --> display: none;"<!-- ENDIF user.picture -->">{user.icon:text}</div>
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
-							
 						</a>
 						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li style="position: relative;padding-top: 10px;">
-								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}" style="position: absolute;width: 100%;top: -30px;text-align: center;">
+								<div component="header/profilelink" class="userName" href="javascipt: void(0);">
 									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
-								</a>
+								</div>
+
+
 								<a class="navigation-link" href="/">
 									<i class="fa fa-fw fa-list"></i> <span>论坛首页</span>
 								</a>
-								<a href="{config.relative_path}/user/{user.userslug}/posts">
+								<a href="{config.relative_path}/user/{user.userslug}/topics">
 									<i class="fa fa-fw fa-pencil-square-o"></i> <span>我的帖子</span>
+								</a>
+								<a href="{config.relative_path}/user/{user.userslug}/posts">
+									<i class="fa fa-fw fa-comments-o"></i> <span>我评论的</span>
 								</a>
 								<a href="{config.relative_path}/user/{user.userslug}/bookmarks">
 									<i class="fa fa-fw fa-heart-o"></i> <span>我的收藏</span>
@@ -87,7 +91,7 @@
 									<i class="fa fa-fw fa-fire"></i> <span>热门帖子</span>
 								</a>
 								<a href="{relative_path}/notifications">
-									<i class="fa fa-fw fa-comments"></i> <span>全部通知</span>
+									<i class="fa fa-fw fa-comments"></i> <span>全部通知</span><i component="notifications/icon" class="menuprompt"></i>
 								</a>
 							</li>
 							<!-- BEGIN qoocoUserShowDOM -->

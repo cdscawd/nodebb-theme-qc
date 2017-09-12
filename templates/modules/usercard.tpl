@@ -25,13 +25,7 @@
 				<span class="human-readable-number">{reputation}</span>
 			</div>
 			
-			<button class="btn-morph fab <!-- IF banned --> hide<!-- ENDIF banned -->">
-				<span>
-					<span class="s1"></span>
-					<span class="s2"></span>
-					<span class="s3"></span>
-				</span>
-			</button>
+			
 		</div>
 	</div>
 </div>
