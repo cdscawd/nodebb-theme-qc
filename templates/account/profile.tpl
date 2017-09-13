@@ -110,7 +110,7 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<h1>[[pages:account/posts, {username}]]</h1>
+			<h4 class="title" style="text-align: center;margin-bottom: 20px;">[[pages:account/posts, {username}]]</h4>
 
 			<div class="col-xs-12">
 				<!-- IF !posts.length -->

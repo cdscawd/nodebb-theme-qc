@@ -62,7 +62,7 @@
 				<span class="counter" component="notifications/icon" data-content="0"></span>
 			</h3>
 			<ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
-			<p class="menu-section-list"><a href="{relative_path}/notifications"><i component="user/status" class="fa fa-fw fa-comments"></i>&nbsp;通知</a></p>
+			<p class="menu-section-list"><a href="{relative_path}/notifications/info"><i component="user/status" class="fa fa-fw fa-comments"></i>&nbsp;通知</a></p>
 			<!-- END qooco.header.notifications -->
 		</section>
 
@@ -77,7 +77,7 @@
 		<!-- END qooco.header.chats -->
 		<!-- ENDIF config.loggedIn -->
 	</nav>
-
+	<div id="masklayer"></div>
 	<main id="panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 			<div class="container">
@@ -85,4 +85,4 @@
 			</div>
 		</nav>
 		<div class="container" id="content">
-		<!-- IMPORT partials/noscript/warning.tpl -->
+			<!-- IMPORT partials/noscript/warning.tpl -->

@@ -41,7 +41,7 @@
 					<!-- IMPORT partials/topic/post.tpl -->
 						
 					<!-- IF !posts.index -->
-					<div class="post-bar-placeholder"></div>
+					<!-- IMPORT partials/post_bar.tpl -->
 					<!-- ENDIF !posts.index -->
 
 				</li>
@@ -51,25 +51,13 @@
 		<!-- IF config.enableQuickReply -->
 		<!-- IMPORT partials/topic/quickreply.tpl -->
 		<!-- ENDIF config.enableQuickReply -->
-
-		<div class="post-bar">
-			<!-- IMPORT partials/post_bar.tpl -->
-		</div>
+		
 		
 		<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
 
-		<div class="visible-xs visible-sm pagination-block text-center">
-			<div class="progress-bar"></div>
-			<div class="wrapper">
-				<i class="fa fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>
-				<i class="fa fa-2x fa-angle-up pointer fa-fw pageup"></i>
-				<span class="pagination-text"></span>
-				<i class="fa fa-2x fa-angle-down pointer fa-fw pagedown"></i>
-				<i class="fa fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>
-			</div>
-		</div>
+		
 	</div>
 	<div widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
 		<!-- BEGIN widgets.sidebar -->

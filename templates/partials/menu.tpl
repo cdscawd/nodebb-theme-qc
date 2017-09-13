@@ -39,7 +39,7 @@
 								</ul>
 							</li>
 							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/notifications/info">[[notifications:see_all]]</a></li>
 						</ul>
 					</li>
 
@@ -87,11 +87,11 @@
 								<a href="{config.relative_path}/user/{user.userslug}/bookmarks">
 									<i class="fa fa-fw fa-heart-o"></i> <span>我的收藏</span>
 								</a>
-								<a href="/popular">
+								<a href="/popular/weekly">
 									<i class="fa fa-fw fa-fire"></i> <span>热门帖子</span>
 								</a>
-								<a href="{relative_path}/notifications">
-									<i class="fa fa-fw fa-comments"></i> <span>全部通知</span><i component="notifications/icon" class="menuprompt"></i>
+								<a href="{relative_path}/notifications/info">
+									<i class="fa fa-fw fa-comments"></i> <span>全部通知</span><!--<i component="notifications/icon" class="menuprompt"></i>--><i component="notifications/icon" id="notificationsicon" data-content="0"></i>
 								</a>
 							</li>
 							<!-- BEGIN qoocoUserShowDOM -->

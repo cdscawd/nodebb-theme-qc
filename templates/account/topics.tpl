@@ -2,7 +2,7 @@
 	<!-- IMPORT partials/account/header.tpl -->
 
 	<div class="row">
-		<h1>{title}</h1>
+		<h4 class="title" style="text-align: center;margin-bottom: 20px;">{title}</h4>
 
 		<!-- IF !topics.length -->
 			<div class="alert alert-warning text-center">{noItemsFoundKey}</div>

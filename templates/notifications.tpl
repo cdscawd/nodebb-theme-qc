@@ -25,7 +25,7 @@
 				<li role="separator" class="divider"></li>
 				<!-- ELSE -->
 				<li role="presentation" class="category">
-					<a role="menu-item" href="{config.relative_path}/notifications?filter={filters.filter}"><i class="fa fa-fw <!-- IF filters.selected -->fa-check<!-- ENDIF filters.selected -->"></i> {filters.name}</a>
+					<a role="menu-item" href="{config.relative_path}/notifications/info?filter={filters.filter}"><i class="fa fa-fw <!-- IF filters.selected -->fa-check<!-- ENDIF filters.selected -->"></i> {filters.name}</a>
 				</li>
 				<!-- ENDIF filters.separator -->
 				<!-- END filters -->
