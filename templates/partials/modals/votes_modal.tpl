@@ -1,6 +1,6 @@
 <h5>[[global:upvoters]] <small>({upvoteCount})</small></h5>
 <!-- BEGIN upvoters -->
-<a href="{config.relative_path}/user/{upvoters.userslug}">
+<a href="javascript: void(0);">
 <!-- IF upvoters.picture -->
 <img class="avatar avatar-sm" src="{upvoters.picture}" title="{upvoters.username}"/>
 <!-- ELSE -->
