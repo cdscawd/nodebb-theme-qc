@@ -1,6 +1,6 @@
 <div class="clearfix post-header">
 	<div class="icon pull-left">
-		<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
+		<a href="javascript: void(0);">
 			<!-- IF posts.user.picture -->
 			<img component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" itemprop="image" />
 			<!-- ELSE -->
@@ -13,7 +13,7 @@
 
 	<small class="pull-left">
 		<strong>
-			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
+			<a href="javascript: void(0);" data-uid="{posts.user.uid}">{posts.user.username}</a>
 		</strong>
 
 		<!-- IMPORT partials/topic/badge.tpl -->
@@ -23,7 +23,7 @@
 		<!-- ENDIF posts.user.banned -->
 
 		<div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
-			<a class="permalink" href="{config.relative_path}/post/{posts.pid}"><span class="timeago" title="{posts.timestampISO}"></span></a>
+			<a class="permalink" href="javascript: void(0);"><span class="timeago" title="{posts.timestampISO}"></span></a>
 
 			<i class="fa fa-pencil-square pointer edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
 
@@ -52,7 +52,7 @@
 <br />
 
 <div class="content" component="post/content" itemprop="text">
-	{posts.content}
+	{posts.content} 
 </div>
 
 <div class="clearfix post-footer">
@@ -98,26 +98,6 @@
 		<!-- IMPORT partials/topic/post-menu.tpl -->
 	</small>
 
-	<!-- IF !hideReplies -->
-	<a component="post/reply-count" href="#" class="threaded-replies no-select <!-- IF !posts.replies.count -->hidden<!-- ENDIF !posts.replies.count -->">
-		<span component="post/reply-count/avatars" class="avatars <!-- IF posts.replies.hasMore -->hasMore<!-- ENDIF posts.replies.hasMore -->">
-			<!-- BEGIN posts.replies.users -->
-			<!-- IF posts.replies.users.picture -->
-			<span><img component="user/picture" data-uid="{posts.replies.users.uid}" title="{posts.replies.users.username}" class="avatar" src="{posts.replies.users.picture}"  itemprop="image" /></span>
-			<!-- ELSE -->
-			<div component="user/picture" data-uid="{posts.replies.users.uid}" title="{posts.replies.users.username}" class="user-icon" style="background-color: {posts.replies.users.icon:bgColor};">{posts.replies.users.icon:text}</div>
-			<!-- ENDIF posts.replies.users.picture -->
-			<!-- END posts.replies.users -->
-		</span>
-
-		<span class="replies-count" component="post/reply-count/text" data-replies="{posts.replies.count}">{posts.replies.text}</span>
-		<span class="replies-last hidden-xs">[[topic:last_reply_time]] <span class="timeago" title="{posts.replies.timestampISO}"></span></span>
-
-		<i class="fa fa-fw fa-chevron-right" component="post/replies/open"></i>
-		<i class="fa fa-fw fa-chevron-down hidden" component="post/replies/close"></i>
-		<i class="fa fa-fw fa-spin fa-spinner hidden" component="post/replies/loading"></i>
-	</a>
-	<!-- ENDIF !hideReplies -->
 </div>
 
 <hr />

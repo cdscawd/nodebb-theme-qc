@@ -28,6 +28,8 @@
 	<!-- IF useCustomCSS -->
 	<style type="text/css">{{customCSS}}</style>
 	<!-- ENDIF useCustomCSS -->
+
+
 </head>
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">

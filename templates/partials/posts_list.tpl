@@ -14,7 +14,7 @@
 			<small class="topic-category"><a href="{config.relative_path}/category/{posts.category.slug}">[[global:posted_in, {posts.category.name}]]</a></small>
 
 			<div class="post-info">
-				<a href="{config.relative_path}/user/{posts.user.userslug}">
+				<a href="javascript: void(0);">
 					<!-- IF posts.user.picture -->
 					<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 					<!-- ELSE -->
@@ -23,7 +23,7 @@
 				</a>
 
 				<div class="post-author">
-					<a href="{config.relative_path}/user/{posts.user.userslug}">{posts.user.username}</a><br />
+					<a href="javascript: void(0);">{posts.user.username}</a><br />
 					<span class="timeago" title="{posts.timestampISO}"></span>
 				</div>
 			</div>

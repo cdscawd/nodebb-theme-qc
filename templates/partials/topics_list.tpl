@@ -22,7 +22,7 @@
 				<!-- ENDIF showSelect -->
 
 				<!-- IF !showSelect -->
-				<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
+				<a href="javascript: void(0);" class="pull-left">
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img" />
 					<!-- ELSE -->
