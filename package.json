@@ -1,38 +1,15 @@
 {
-  "_from": "nodebb-theme-qc",
-  "_id": "nodebb-theme-qc@1.8.0",
-  "_inBundle": false,
-  "_integrity": "sha512-h06lMdja2e2IXpRPGfISLSnnOycq6xPT4Uv2BTwybQGIAWzy2ldIX6kx7YUCT8kBua+vJryZAovFkgReXYiDAw==",
-  "_location": "/nodebb-theme-qc",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "nodebb-theme-qc",
-    "name": "nodebb-theme-qc",
-    "escapedName": "nodebb-theme-qc",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/nodebb-theme-qc/-/nodebb-theme-qc-1.8.0.tgz",
-  "_shasum": "5b3d12579a1c0ceb8a66c6ac2f56fe13276f20d2",
-  "_spec": "nodebb-theme-qc",
-  "_where": "/Users/gatsby/project/qooco/coding/qooco-bbs-qc@3",
-  "author": {
-    "name": "cdscawd"
-  },
-  "bugs": {
-    "url": "https://github.com/cdscawd/nodebb-theme-qc/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "nodebb-theme-qc",
+  "version": "1.8.1",
   "description": "qc theme for NodeBB",
-  "homepage": "https://github.com/cdscawd/nodebb-theme-qc#readme",
+  "main": "theme.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdscawd/nodebb-theme-qc.git"
+  },
   "keywords": [
     "nodebb",
     "theme",
@@ -40,15 +17,10 @@
     "bootstrap",
     "qc"
   ],
+  "author": "cdscawd",
   "license": "ISC",
-  "main": "theme.less",
-  "name": "nodebb-theme-qc",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cdscawd/nodebb-theme-qc.git"
+  "bugs": {
+    "url": "https://github.com/cdscawd/nodebb-theme-qc/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.8.0"
+  "homepage": "https://github.com/cdscawd/nodebb-theme-qc#readme"
 }
