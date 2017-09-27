@@ -82,8 +82,9 @@
 			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
 				<i component="post/bookmarkupvote/on" class="fa fa-thumbs-o-up <!-- IF !posts.bookmarkupvote -->hidden<!-- ENDIF !posts.bookmarkupvote -->"></i>
 				<i component="post/bookmarkupvote/off" class="fa fa-thumbs-up <!-- IF posts.bookmarkupvote -->hidden<!-- ENDIF posts.bookmarkupvote -->"></i>
+				
+				<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
 			</a>
-			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
 
 			<!-- BEGIN qooco.post.votes -->
 			<!-- IF !downvote:disabled -->

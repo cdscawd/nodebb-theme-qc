@@ -7,11 +7,14 @@
 				</button>
 				
 				<!-- IF config.qooco.menu.navbarBrand -->
-				<a href="javascript: history.back();">
+				<a class="back-btn" href="javascript:;">
 					<h1 class="navbar-brand forum-title navbar-back" style="display: none;"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
 				</a>
+
+				<a class="close-btn" href="javascript:;">
+					<span>关闭</span>
+				</a>
 				
-				<span class="close-bbs">关闭</span>
 				<div class="nav-title"><span></span></div>
 
 				<!-- ENDIF config.qooco.menu.navbarBrand -->

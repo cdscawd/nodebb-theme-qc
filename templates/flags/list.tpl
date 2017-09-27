@@ -46,7 +46,7 @@
 				<tr data-flag-id="{../flagId}">
 					<td><span class="label label-{../labelClass}">[[flags:state-{../state}]]</span></td>
 					<td>
-						<a href="javascript: void(0);">
+						<a href="{config.relative_path}/flags/{../flagId}">
 							<strong>{../target_readable}</strong> &mdash; <span component="flags/list/description">{../description}</span>
 						</a>
 					</td>
