@@ -6,7 +6,6 @@
 					<span class="icon-bar"></span>
 				</button>
 				
-				<!-- IF config.qooco.menu.navbarBrand -->
 				<a class="back-btn" href="javascript:;">
 					<h1 class="navbar-brand forum-title navbar-back" style="display: none;"><i class="fa fa-fw fa-chevron-left"></i>返回</h1>
 				</a>
@@ -16,8 +15,6 @@
 				</a>
 				
 				<div class="nav-title"><span></span></div>
-
-				<!-- ENDIF config.qooco.menu.navbarBrand -->
 
 				<div component="navbar/title" class="visible-xs hidden">
 					<span></span>
