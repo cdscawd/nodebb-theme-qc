@@ -4,7 +4,7 @@
 	<li component="post" class="posts-list-item row<!-- IF posts.deleted --> deleted<!-- ELSE --><!-- IF posts.topic.deleted --> deleted<!-- ENDIF posts.topic.deleted --><!-- ENDIF posts.deleted -->" data-pid="{posts.pid}" data-uid="{posts.uid}">
 		<div class="col-lg-11 col-sm-10 col-xs-9 post-body">
 			<a class="topic-title" href="{config.relative_path}/post/{posts.pid}">
-				<!-- IF !posts.isMainPost --><!-- ENDIF !posts.isMainPost -->{posts.topic.title}
+				<!-- IF !posts.isMainPost -->RE: <!-- ENDIF !posts.isMainPost -->{posts.topic.title}
 			</a>
 
 			<div component="post/content" class="content">
@@ -14,7 +14,7 @@
 			<small class="topic-category"><a href="{config.relative_path}/category/{posts.category.slug}">[[global:posted_in, {posts.category.name}]]</a></small>
 
 			<div class="post-info">
-				<a href="javascript: void(0);">
+				<a href="{config.relative_path}/user/{posts.user.userslug}">
 					<!-- IF posts.user.picture -->
 					<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 					<!-- ELSE -->
@@ -23,7 +23,7 @@
 				</a>
 
 				<div class="post-author">
-					<a href="javascript: void(0);">{posts.user.username}</a><br />
+					<a href="{config.relative_path}/user/{posts.user.userslug}">{posts.user.username}</a><br />
 					<span class="timeago" title="{posts.timestampISO}"></span>
 				</div>
 			</div>

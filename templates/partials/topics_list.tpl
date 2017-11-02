@@ -22,7 +22,7 @@
 				<!-- ENDIF showSelect -->
 
 				<!-- IF !showSelect -->
-				<a href="javascript: void(0);" class="pull-left">
+				<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img" />
 					<!-- ELSE -->
@@ -44,7 +44,7 @@
 				<!-- BEGIN icons -->@value<!-- END icons -->
 
 				<!-- IF !topics.noAnchor -->
-				<p><a style="display: block;" href="{config.relative_path}/topic/{topics.slug}<!-- IF topics.bookmark -->/{topics.bookmark}<!-- ENDIF topics.bookmark -->" itemprop="url">{topics.title}</a></p>
+				<a href="{config.relative_path}/topic/{topics.slug}<!-- IF topics.bookmark -->/{topics.bookmark}<!-- ENDIF topics.bookmark -->" itemprop="url">{topics.title}</a><br />
 				<!-- ELSE -->
 				<span>{topics.title}</span><br />
 				<!-- ENDIF !topics.noAnchor -->
@@ -75,8 +75,8 @@
 			</h2>
 		</div>
 
-		<div class="mobile-stat col-xs-2 visible-xs text-right" style="height: 44px;line-height: 44px;"> 
-			<a style="display: block;" href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}"><span class="human-readable-number">{topics.postcount} </span><i class="fa fa-arrow-circle-right"></i></a>
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">{topics.postcount}</span> <a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}"><i class="fa fa-arrow-circle-right"></i></a>
 		</div>
 
 		<div class="col-md-1 hidden-sm hidden-xs stats">
