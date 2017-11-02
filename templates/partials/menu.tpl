@@ -16,6 +16,7 @@
 				
 				<div class="nav-title"><span></span></div>
 
+
 				<div component="navbar/title" class="visible-xs hidden">
 					<span></span>
 				</div>
@@ -144,10 +145,12 @@
 							</li>
 							<!-- ENDIF isAdmin -->
 							<!-- ENDIF showModMenu -->
+							<!-- 
 							<li role="presentation" class="divider"></li>
 							<li component="user/logout">
 								<a href="#"><i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span></a>
 							</li>
+							 -->
 						</ul>
 					</li>
 

@@ -54,7 +54,7 @@
 						<!-- IF ../reporter.picture -->
 						<img class="avatar avatar-sm" src="{../reporter.picture}" />
 						<!-- ELSE -->
-						<div class="avatar avatar-sm" style="border-radius: 50%;background-color: {../reporter.icon:bgColor};">{../reporter.icon:text}</div>
+						<div class="avatar avatar-sm" style="border-radius: ;background-color: {../reporter.icon:bgColor};">{../reporter.icon:text}</div>
 						<!-- ENDIF ../reporter.picture -->
 						{../reporter.username}
 					</td>

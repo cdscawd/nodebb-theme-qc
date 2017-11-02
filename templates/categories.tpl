@@ -7,9 +7,6 @@
 <div class="row">
 	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<h1 class="categories-title">[[pages:categories]]</h1>
-		<h4>
-			<a style="color: red;" href="http://testbbs.qooco.com/registersession/testbbs.html">Test about input file.</a>
-		</h4>
 		<ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 			<!-- BEGIN categories -->
 			<!-- IMPORT partials/categories/item.tpl -->
