@@ -48,13 +48,10 @@
 		<!-- END qooco.post.bookmarked -->
 	</small>
 </div>
-
 <br />
-
 <div class="content" component="post/content" itemprop="text">
 	{posts.content} 
 </div>
-
 <div class="clearfix post-footer">
 	<!-- IF posts.user.signature -->
 	<div component="post/signature" data-uid="{posts.user.uid}" class="post-signature">{posts.user.signature}</div>
@@ -100,5 +97,4 @@
 	</small>
 
 </div>
-
 <hr />

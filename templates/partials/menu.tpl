@@ -11,8 +11,10 @@
 				</a>
 
 				<a class="close-btn" href="javascript:;">
+					
 					<span>关闭</span>
 				</a>
+				
 				
 				<div class="nav-title"><span></span></div>
 
@@ -95,6 +97,7 @@
 									<i class="fa fa-fw fa-comments"></i> <span>全部通知</span><!--<i component="notifications/icon" class="menuprompt"></i>--><i component="notifications/icon" id="notificationsicon" data-content="0"></i>
 								</a>
 							</li>
+
 							<!-- BEGIN qoocoUserShowDOM -->
 							<li role="presentation" class="divider"></li>
 							<li>
